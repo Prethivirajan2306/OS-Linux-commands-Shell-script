@@ -43,23 +43,26 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
-
+![Alt text](img/file-1.png)
 
 cat < file2
 ## OUTPUT
-
+![Alt text](img/file_2.png)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
  
+
+ ![Alt text](img/cmp.png)
 comm file1 file2
  ## OUTPUT
+ ![Alt text](img/comm.png)
 
  
 diff file1 file2
 ## OUTPUT
-
+![Alt text](img/diff.png)
 
 #Filters
 
@@ -82,18 +85,18 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
+![Alt text](img/cut.png)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
-
+![Alt text](img/cut1.png)
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![Alt text](img/cut3.png)
 
 cat < newfile 
 ```
@@ -107,24 +110,24 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-
+![Alt text](img/Helloworld.png)
 
 
 grep hello newfile 
 ## OUTPUT
 
-
+![Alt text](img/smallhello.png)
 
 
 grep -v hello newfile 
 ## OUTPUT
 
-
+![Alt text](img/grepv.png)
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
-
+![Alt text](img/grepi.png)
 
 
 cat newfile | grep -i -c "hello"
