@@ -53,9 +53,10 @@ cat < file2
 cmp file1 file2
 ## OUTPUT
  
+ comm file1 file2
 
  ![Alt text](img/cmp.png)
-comm file1 file2
+
  ## OUTPUT
  ![Alt text](img/comm.png)
 
@@ -133,17 +134,17 @@ cat newfile | grep -i "hello"
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-
+![Alt text](img/grepic.png)
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
-
+![Alt text](img/ubuntu.png)
 
 grep -w -n world newfile   
 ## OUTPUT
-
+![Alt text](img/wn.png)
 
 cat < newfile 
 ```
@@ -167,59 +168,59 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
-
+![Alt text](img/egrep.png)
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
-
+![Alt text](img/egrepwhh.png)
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
-
+![Alt text](img/egrepa-z.png)
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
-
+![Alt text](img/%5Ehello.png)
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
-
+![Alt text](img/world.png)
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![Alt text](img/World1.png)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
-
+![Alt text](img/world2.png)
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
-
+![Alt text](img/onetonine.png)
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
+![Alt text](img/linuxworld.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
+![Alt text](img/linuxWorld1.png)
 
 egrep l{2} newfile
 ## OUTPUT
 
-
+![Alt text](img/egrep1-2.png)
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![Alt text](img/egreps1-2.png)
 
 cat > file23
 ```
@@ -237,79 +238,81 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![Alt text](img/file23.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![Alt text](img/file23-1.png)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-
+![Alt text](img/file23-2.png)
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
-
+![Alt text](img/file23-3.png)
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-
+![Alt text](img/file23-4.png)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
-
+![Alt text](img/file23-5.png)
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
 
-
+![Alt text](img/file23-6.png)
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
-
+![Alt text](img/file23-7.png)
 
 seq 10 
 ## OUTPUT
 
-
+![Alt text](img/seq.png)
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
-
+![Alt text](img/seq1.png)
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
-
+![Alt text](img/seq2.png)
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-
+![Alt text](img/seq3.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![Alt text](img/seq4.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![Alt text](img/seq5.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-
+![Alt text](img/sed.png)
 
 sed -n '2,4{s/$/*/;p}' file23
+## OUTPUT
+![Alt text](img/sed1.png)
 
 
 #Sorting File content
