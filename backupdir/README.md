@@ -373,7 +373,7 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![Alt text](img/tarcvf.png)
+
 
 mkdir backupdir
  
@@ -383,19 +383,19 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![Alt text](img/tartvf.png)
+
 
 tar -xvf backup.tar
 ## OUTPUT
-![Alt text](img/tarxvf.png)
+
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- ![Alt text](img/backuptar.png)
+ 
 gunzip backup.tar.gz
 ## OUTPUT
-![Alt text](img/gun.png)
+
  
 # Shell Script
 ```
@@ -405,7 +405,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-![Alt text](img/myscript.png)
+
  
 cat << stop > herecheck.txt
 ```
@@ -417,7 +417,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-![Alt text](img/catherecheck.png)
+
 
 cat < scriptest.sh 
 ```bash
@@ -456,25 +456,24 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
- ![Alt text](img/chmod777.png)
+ 
 ls file1
 ## OUTPUT
-![Alt text](img/lsfile.png)
+
 echo $?
-## OUTPUT
- ![Alt text](img/echo0.png)
+## OUTPUT 
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- ![Alt text](img/echo1.png)
+ 
 abcd
  
 echo $?
  ## OUTPUT
 
-![Alt text](img/abcd1.png)
+
  
 # mis-using string comparisons
 
@@ -506,13 +505,13 @@ fi
 ```
 ##OUTPUT
 
-![Alt text](img/bin.png)
+
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-![Alt text](img/strcomp1.png)
+
 
 # check file ownership
 cat < psswdperm.sh 
@@ -539,7 +538,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![Alt text](img/psswdperm.png)
+
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -586,7 +585,7 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
-![Alt text](img/ifnested.png)
+
 
 # using numeric test comparisons
 cat > iftest.sh 
@@ -629,7 +628,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-![Alt text](img/iftest.png)
+
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -678,7 +677,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-![Alt text](img/nohome.png)
+
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
