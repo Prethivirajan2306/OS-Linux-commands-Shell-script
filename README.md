@@ -706,7 +706,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![Alt text](img/elifcheck23.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -722,7 +722,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+![Alt text](img/ifcompound.png)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -741,6 +741,9 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+
+## OUTPUT
+![Alt text](img/Casecheck23.png)
  
 cat > whiletest
 ```bash
@@ -756,6 +759,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
+## OUTPUT
+
+![Alt text](img/whiletest23.png)
  
  
 cat untiltest.sh 
@@ -769,7 +775,10 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
- 
+$ ./untiltest.sh
+
+## OUTPUT
+![Alt text](img/untiltest23.png)
  
  
 cat forin1.sh 
@@ -783,6 +792,9 @@ done
  ```
  
 $ chmod 755 forin1.sh
+$./forin.sh
+## OUTPUT
+![Alt text](img/forin1.png)
  
  
 cat forin2.sh 
@@ -809,6 +821,10 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
+
+## OUTPUT
+![Alt text](img/FORIN2.png)
+
  
 cat forin3.sh 
 ```bash
@@ -820,6 +836,9 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
+## OUTPUT
+
+![Alt text](img/forin3.png)
  
 cat forin1.sh 
 ```bash
@@ -833,6 +852,9 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+
+![Alt text](img/forin1.png)
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -854,7 +876,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![Alt text](img/CATCITIES.png)
 
 cat forctype.sh 
 ```bash
@@ -868,7 +890,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-
+![Alt text](img/FORCTYPE.png)
 cat forctype1.sh 
 ```bash
 #!/bin/bash
@@ -881,7 +903,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-
+![Alt text](img/FORCTYPE1.png)
 cat fornested1.sh 
 ```bash
 #!/bin/bash
@@ -899,7 +921,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![Alt text](img/FORNESTED1.png)
  
 cat forbreak.sh 
 ```bash
@@ -915,13 +937,15 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
+
 
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
- 
-cat forbreak.sh 
+
+## OUTPUT
+ ![Alt text](img/FORBREAK1.png)
+cat forcontinue.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -941,7 +965,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![Alt text](img/forcontinue.png)
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -955,7 +979,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![Alt text](img/exread.png)
 
  cat exread1.sh
 ```bash
@@ -968,7 +992,7 @@ $ chmod 755 exread1.sh
 
 ## OUTPUT
 
-
+![Alt text](img/exread1.png)
 
 $ ./exread1.sh 
  
@@ -989,7 +1013,7 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
+![Alt text](img/funcex1.png)
  
  ./funcex.sh 1 2
 
@@ -1006,7 +1030,7 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ![Alt text](img/argshift.png)
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1023,7 +1047,7 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ![Alt text](img/argshift1.png)
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1036,7 +1060,7 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
- 
+ ![Alt text](img/argshift3.png)
  
 cat > nc.awk
 ```bash
@@ -1067,7 +1091,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![Alt text](img/awkdata.png)
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1094,7 +1118,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![Alt text](img/Palindrome.png)
 
 # RESULT:
 The Commands are executed successfully.
